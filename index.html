@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portal de Trámites Inclusivos</title>
+  <meta name="description" content="Pagina de ejemplo con navegacion, tabla y formulario.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+  <div class="site-header">
+    <h1>Portal de Trámites Inclusivos</h1>
+    <p>Dos casos de uso rápidos para ciudadania digital.</p>
+  </div>
+
+  <div class="site-nav">
+    <ul>
+      <li><a href="#caso-1">Caso 1: Solicitar cita</a></li>
+      <li><a href="#caso-2">Caso 2: Consultar horarios</a></li>
+      <li><a href="#formulario">Formulario breve</a></li>
+      <li><a href="https://www.gob.mx/" target="_blank" rel="noopener noreferrer">Portal de referencia</a></li>
+    </ul>
+  </div>
+  </header>
+  <main>
+  <div id="contenido" class="site-main">
+    <div id="caso-1" class="card">
+      <h2>Caso de uso 1: Solicitar cita en linea</h2>
+      <p>La persona usuaria revisa el proceso y envia una solicitud con sus datos básicos.</p>
+      <figure>
+        <img src="assets/cita-en-linea.svg" width="640" height="320" alt="decorativa">
+        <figcaption>Proceso guiado en tres pasos: seleccionar servicio, fecha y confirmación.</figcaption>
+      </figure>
+    </div>
+  </main>
+
+    <div id="caso-2" class="card">
+      <h2>Caso de uso 2: Consultar horarios de atención</h2>
+      <p>La tabla presenta horarios por sede y canal para facilitar la planificación.</p>
+      <figure>
+        <img src="assets/consulta-horarios.svg" width="640" height="320" alt="Horario semanal">
+        <figcaption>Horarios actualizados semanalmente para sede central y sede norte.</figcaption>
+      </figure>
+
+      <table>
+        <tr>
+          <th scope="col">Sede</th>
+          <th scope="col">Canal</th>
+          <th scope="col">Lunes a Viernes</th>
+          <th scope="col">Sabado</th>
+        </tr>
+          <tr>
+            <td>Sede Central</td>
+            <td>Presencial</td>
+            <td>08:00 - 17:00</td>
+            <td>09:00 - 13:00</td>
+          </tr>
+          <tr>
+            <td>Sede Norte</td>
+            <td>Presencial</td>
+            <td>09:00 - 16:00</td>
+            <td>Cerrado</td>
+          </tr>
+          <tr>
+            <td>Mesa Virtual</td>
+            <td>En linea</td>
+            <td>07:00 - 19:00</td>
+            <td>08:00 - 12:00</td>
+          </tr>
+      </table>
+    </div>
+
+    <div id="formulario" class="card">
+      <h2>Formulario breve de contacto</h2>
+      <form action="#" method="post">
+        <div class="field">
+          <label for="nombre">Nombre completo: *</label>
+          <input id="nombre" name="nombre" type="text" required>
+        </div>
+
+        <div class="field">
+          <label for="correo">Correo electrónico: *</label>
+          <input id="correo" name="correo" type="email" required>
+        </div>
+
+        <div class="field">
+          <label for="tramite">Tipo de trámite: *</label>
+          <select id="tramite" name="tramite" required>
+            <option value="">Selecciona una opción</option>
+            <option value="cita">Solicitar cita</option>
+            <option value="horarios">Consultar horarios</option>
+          </select>
+        </div>
+
+        <div class="field checkbox-row">
+          <input id="acepto" name="acepto" type="checkbox">
+          <label for="acepto">Confirmo que la información es correcta.</label>
+        </div>
+
+        <button type="submit">Enviar solicitud</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+  <div class="site-footer">
+    <p>Contacto: <a href="mailto:ayuda@tramites.test">ayuda@tramites.test</a></p>
+    <p><a href="#contenido">Volver al contenido principal</a></p>
+  </div>
+  </footer>
+</body>
+</html>
